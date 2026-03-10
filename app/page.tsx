@@ -39,30 +39,34 @@ export default function SerasaLimpaNome() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-pink-100 to-pink-200 px-4 py-16">
+      <section className="bg-gradient-to-br from-pink-100 to-pink-200 px-4 py-12 md:py-16">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <div className="space-y-6 text-center md:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight text-balance">
               Serasa Limpa Nome:
               <br />
               <span className="text-pink-600">Negocie dívidas com até 90% de desconto</span>
             </h1>
-            <p className="text-lg text-gray-700">
+            <p className="text-base sm:text-lg text-gray-700 text-pretty">
               {
                 "Encontre ofertas de forma rápida e segura, com opções de parcelamento que facilitam a negociação das suas dívidas e ajudam a limpar o seu nome"
               }
             </p>
-            <Link href="/entrar">
-              <Button className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 text-lg">Consultar CPF</Button>
-            </Link>
+            <div className="flex justify-center md:justify-start">
+              <Link href="/entrar">
+                <Button className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                  Consultar CPF
+                </Button>
+              </Link>
+            </div>
           </div>
-          <div className="relative">
+          <div className="relative order-first md:order-last">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/assets_b212bb18f00a40869a6cd42f77cbeefc_b799797afcc34c618873e57a818b68c3-SY76DmGXIerkAU1uP5EXBGjKGWCoHv.webp"
               alt="Homem sorrindo segurando celular com ofertas exclusivas"
               width={500}
               height={600}
-              className="w-full h-auto rounded-2xl"
+              className="w-full max-w-sm mx-auto md:max-w-none h-auto rounded-2xl"
             />
           </div>
         </div>
@@ -77,16 +81,22 @@ export default function SerasaLimpaNome() {
       </section>
 
       {/* App Mockup Section */}
-      <section className="px-4 py-16">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <Badge className="bg-pink-600 text-white">Novo</Badge>
-            <h2 className="text-3xl font-bold text-gray-900">Junte suas dívidas e negocie em um único boleto</h2>
-            <p className="text-gray-700">
+      <section className="px-4 py-12 md:py-16">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="space-y-6 text-center md:text-left">
+            <div className="flex justify-center md:justify-start">
+              <Badge className="bg-pink-600 text-white">Novo</Badge>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-balance">Junte suas dívidas e negocie em um único boleto</h2>
+            <p className="text-gray-700 text-pretty">
               Agora você pode juntar todas as suas dívidas em um só lugar e negociar com condições especiais. Tudo isso
               de forma simples e rápida pelo app.
             </p>
-            <Button className="bg-pink-600 hover:bg-pink-700 text-white">Conhecer o serviço</Button>
+            <div className="flex justify-center md:justify-start">
+              <Button className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-5 font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105">
+                Conhecer o serviço
+              </Button>
+            </div>
           </div>
           <div className="relative">
             <div className="bg-gray-100 rounded-2xl p-8">
@@ -103,12 +113,12 @@ export default function SerasaLimpaNome() {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-gray-50 px-4 py-16">
+      <section className="bg-gray-50 px-4 py-12 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12 text-balance">
             Por que negociar suas dívidas com a Serasa?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto">
                 <Shield className="w-8 h-8 text-pink-600" />
@@ -141,20 +151,20 @@ export default function SerasaLimpaNome() {
       </section>
 
       {/* Partner Logos */}
-      <section className="px-4 py-12">
+      <section className="px-4 py-10 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-center text-gray-900 mb-6 md:mb-8 text-balance">
             São mais de 1.000 parceiros com ofertas exclusivas para você
           </h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-2xl font-bold text-purple-600">vivo</div>
-            <div className="text-2xl font-bold text-blue-600">itaú</div>
-            <div className="text-xl font-semibold text-gray-700">CLARO</div>
-            <div className="text-xl font-semibold text-orange-500">Oi</div>
-            <div className="text-xl font-semibold text-red-500">Santander</div>
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-60">
+            <div className="text-xl sm:text-2xl font-bold text-purple-600">vivo</div>
+            <div className="text-xl sm:text-2xl font-bold text-blue-600">itaú</div>
+            <div className="text-lg sm:text-xl font-semibold text-gray-700">CLARO</div>
+            <div className="text-lg sm:text-xl font-semibold text-orange-500">Oi</div>
+            <div className="text-lg sm:text-xl font-semibold text-red-500">Santander</div>
           </div>
-          <div className="text-center mt-8">
-            <Button variant="outline" className="border-pink-600 text-pink-600 hover:bg-pink-50 bg-transparent">
+          <div className="text-center mt-6 md:mt-8">
+            <Button variant="outline" className="border-pink-600 text-pink-600 hover:bg-pink-50 bg-transparent px-6 py-5 font-semibold rounded-xl hover:scale-105 transition-all duration-200">
               Ver todos os parceiros
             </Button>
           </div>
